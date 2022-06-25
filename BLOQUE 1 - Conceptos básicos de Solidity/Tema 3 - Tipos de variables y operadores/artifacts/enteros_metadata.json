@@ -1,0 +1,41 @@
+{
+	"compiler": {
+		"version": "0.6.9+commit.3e3065ac"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol": "enteros"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol": {
+			"keccak256": "0x2a184df67da8858e8e643f866e13f572ff93146eaf39998858fea7b19c953f48",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b5844ddc233dd16383594435eeda65d6f33f933ff4ffb94d15bec33ef1e589dc",
+				"dweb:/ipfs/QmaPKJod5rMdmYF7yfbfa7B1YVmoehTusgxuJv8zMGqoiX"
+			]
+		}
+	},
+	"version": 1
+}

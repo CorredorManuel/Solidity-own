@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_cadena",
+						"type": "string"
+					}
+				],
+				"name": "calcularHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_cadena",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_k",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"name": "calcularHash2",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_cadena",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_k",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"name": "calcularHash3",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BLOQUE 1 - Conceptos básicos de Solidity/Tema 2 - Propiedades de transacciones y bloques/keccak256.sol": "hash"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BLOQUE 1 - Conceptos básicos de Solidity/Tema 2 - Propiedades de transacciones y bloques/keccak256.sol": {
+			"keccak256": "0x889f55b2c1b562cfb530fc794196d777d801114f6717943791c5bc821a24fb62",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa7558aed36b24bfd7f8e06d5a23798a9148cbb62b6e9c00c15df7a3aed2b16d",
+				"dweb:/ipfs/QmUTSyhUiYJZ2WNZdudDHXNd8D5meEB1TPWi6siS66jcki"
+			]
+		}
+	},
+	"version": 1
+}

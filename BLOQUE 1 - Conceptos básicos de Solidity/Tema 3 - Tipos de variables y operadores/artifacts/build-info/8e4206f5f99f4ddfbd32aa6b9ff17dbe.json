@@ -1,0 +1,1314 @@
+{
+	"id": "8e4206f5f99f4ddfbd32aa6b9ff17dbe",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.9",
+	"solcLongVersion": "0.6.9+commit.3e3065ac",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol": {
+				"content": "//indicamos la versión\r\npragma solidity >=0.4.4 <0.7.0;\r\n\r\ncontract enteros{\r\n    //Variables enteras sin signo\r\n    uint mi_primer_entero;\r\n    uint mi_primer_entero_inicializado = 3;\r\n    uint cota = 5000;\r\n\r\n    //Variables enteras sin signo con un numero especifico de bits\r\n    uint8 entero_8_bits;\r\n    uint64 entero_64_bits = 7000;\r\n    uint16 entero_16_bits;\r\n    uint256 entero_25_bits;\r\n\r\n    //Variables enteras con signo\r\n    int mi_primer_entero_con_signo;\r\n    int mi_numero = -32;\r\n    int mi_numero_2 = 65;\r\n\r\n    //Variables enteras con signo con un numero especifico de bits\r\n    int72 entero_con_signo_72_bits;\r\n    int240 entero_con240_bits = 90000;\r\n    int256 entero_con_256_bits;\r\n\r\n} \r\n\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol": {
+				"enteros": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":60:708  contract enteros{\r... */\n  mstore(0x40, 0x80)\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":183:184  3 */\n  0x03\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":146:184  uint mi_primer_entero_inicializado = 3 */\n  0x01\n  sstore\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":203:207  5000 */\n  0x1388\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":191:207  uint cota = 5000 */\n  0x02\n  sstore\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":334:338  7000 */\n  0x1b58\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":310:338  uint64 entero_64_bits = 7000 */\n  0x03\n  exp(0x0100, 0x01)\n  dup2\n  sload\n  dup2\n  0xffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":492:495  -32 */\n  0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":476:495  int mi_numero = -32 */\n  0x06\n  sstore\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":520:522  65 */\n  0x41\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":502:522  int mi_numero_2 = 65 */\n  0x07\n  sstore\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":664:669  90000 */\n  0x015f90\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":636:669  int240 entero_con240_bits = 90000 */\n  0x09\n  exp(0x0100, 0x00)\n  dup2\n  sload\n  dup2\n  0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0x1d\n  signextend\n  0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":60:708  contract enteros{\r... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":60:708  contract enteros{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212207123e1c7017301e436ac0beceb972b6e7653cc1f5a21d3ba083f2ce20822981664736f6c63430006090033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "60806040526003600155611388600255611b58600360016101000a81548167ffffffffffffffff021916908367ffffffffffffffff1602179055507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0600655604160075562015f90600960006101000a8154817dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0219169083601d0b7dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff16021790555034801560c957600080fd5b50603f806100d86000396000f3fe6080604052600080fdfea26469706673582212207123e1c7017301e436ac0beceb972b6e7653cc1f5a21d3ba083f2ce20822981664736f6c63430006090033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x3 PUSH1 0x1 SSTORE PUSH2 0x1388 PUSH1 0x2 SSTORE PUSH2 0x1B58 PUSH1 0x3 PUSH1 0x1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH8 0xFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH8 0xFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH32 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0 PUSH1 0x6 SSTORE PUSH1 0x41 PUSH1 0x7 SSTORE PUSH3 0x15F90 PUSH1 0x9 PUSH1 0x0 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH30 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH1 0x1D SIGNEXTEND PUSH30 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP CALLVALUE DUP1 ISZERO PUSH1 0xC9 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH2 0xD8 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH18 0x23E1C7017301E436AC0BECEB972B6E7653CC 0x1F GAS 0x21 0xD3 0xBA ADDMOD EXTCODEHASH 0x2C 0xE2 ADDMOD 0x22 SWAP9 AND PUSH5 0x736F6C6343 STOP MOD MULMOD STOP CALLER ",
+							"sourceMap": "60:648:0:-:0;;;183:1;146:38;;203:4;191:16;;334:4;310:28;;;;;;;;;;;;;;;;;;;;492:3;476:19;;520:2;502:20;;664:5;636:33;;;;;;;;;;;;;;;;;;;;;;60:648;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212207123e1c7017301e436ac0beceb972b6e7653cc1f5a21d3ba083f2ce20822981664736f6c63430006090033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH18 0x23E1C7017301E436AC0BECEB972B6E7653CC 0x1F GAS 0x21 0xD3 0xBA ADDMOD EXTCODEHASH 0x2C 0xE2 ADDMOD 0x22 SWAP9 AND PUSH5 0x736F6C6343 STOP MOD MULMOD STOP CALLER ",
+							"sourceMap": "60:648:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "121882",
+								"totalCost": "134482"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 183,
+									"end": 184,
+									"name": "PUSH",
+									"source": 0,
+									"value": "3"
+								},
+								{
+									"begin": 146,
+									"end": 184,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 146,
+									"end": 184,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 203,
+									"end": 207,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1388"
+								},
+								{
+									"begin": 191,
+									"end": 207,
+									"name": "PUSH",
+									"source": 0,
+									"value": "2"
+								},
+								{
+									"begin": 191,
+									"end": 207,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 334,
+									"end": 338,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1B58"
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "PUSH",
+									"source": 0,
+									"value": "3"
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 310,
+									"end": 338,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 492,
+									"end": 495,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0"
+								},
+								{
+									"begin": 476,
+									"end": 495,
+									"name": "PUSH",
+									"source": 0,
+									"value": "6"
+								},
+								{
+									"begin": 476,
+									"end": 495,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 520,
+									"end": 522,
+									"name": "PUSH",
+									"source": 0,
+									"value": "41"
+								},
+								{
+									"begin": 502,
+									"end": 522,
+									"name": "PUSH",
+									"source": 0,
+									"value": "7"
+								},
+								{
+									"begin": 502,
+									"end": 522,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 664,
+									"end": 669,
+									"name": "PUSH",
+									"source": 0,
+									"value": "15F90"
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "PUSH",
+									"source": 0,
+									"value": "9"
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1D"
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "SIGNEXTEND",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 636,
+									"end": 669,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 708,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212207123e1c7017301e436ac0beceb972b6e7653cc1f5a21d3ba083f2ce20822981664736f6c63430006090033",
+									".code": [
+										{
+											"begin": 60,
+											"end": 708,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 60,
+											"end": 708,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 60,
+											"end": 708,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 60,
+											"end": 708,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 60,
+											"end": 708,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 60,
+											"end": 708,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.9+commit.3e3065ac\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"BLOQUE 1 - Conceptos b\\u00e1sicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":\"enteros\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"BLOQUE 1 - Conceptos b\\u00e1sicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol\":{\"keccak256\":\"0x7711c3b619ae3bd8269a367c44cb525511cb13afa7c9e7423208b35479ca571f\",\"urls\":[\"bzz-raw://37f65aac41631c0a24a6aa769adfcc510d3bb3575f3be774718c62e9cd7b72ad\",\"dweb:/ipfs/QmcHhTCutWU46kymGq4vPdUJwCvuUmsE5EBPM4XUM66uQq\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "mi_primer_entero",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 6,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "mi_primer_entero_inicializado",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 9,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "cota",
+								"offset": 0,
+								"slot": "2",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 11,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "entero_8_bits",
+								"offset": 0,
+								"slot": "3",
+								"type": "t_uint8"
+							},
+							{
+								"astId": 14,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "entero_64_bits",
+								"offset": 1,
+								"slot": "3",
+								"type": "t_uint64"
+							},
+							{
+								"astId": 16,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "entero_16_bits",
+								"offset": 9,
+								"slot": "3",
+								"type": "t_uint16"
+							},
+							{
+								"astId": 18,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "entero_25_bits",
+								"offset": 0,
+								"slot": "4",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 20,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "mi_primer_entero_con_signo",
+								"offset": 0,
+								"slot": "5",
+								"type": "t_int256"
+							},
+							{
+								"astId": 24,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "mi_numero",
+								"offset": 0,
+								"slot": "6",
+								"type": "t_int256"
+							},
+							{
+								"astId": 27,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "mi_numero_2",
+								"offset": 0,
+								"slot": "7",
+								"type": "t_int256"
+							},
+							{
+								"astId": 29,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "entero_con_signo_72_bits",
+								"offset": 0,
+								"slot": "8",
+								"type": "t_int72"
+							},
+							{
+								"astId": 32,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "entero_con240_bits",
+								"offset": 0,
+								"slot": "9",
+								"type": "t_int240"
+							},
+							{
+								"astId": 34,
+								"contract": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol:enteros",
+								"label": "entero_con_256_bits",
+								"offset": 0,
+								"slot": "10",
+								"type": "t_int256"
+							}
+						],
+						"types": {
+							"t_int240": {
+								"encoding": "inplace",
+								"label": "int240",
+								"numberOfBytes": "30"
+							},
+							"t_int256": {
+								"encoding": "inplace",
+								"label": "int256",
+								"numberOfBytes": "32"
+							},
+							"t_int72": {
+								"encoding": "inplace",
+								"label": "int72",
+								"numberOfBytes": "9"
+							},
+							"t_uint16": {
+								"encoding": "inplace",
+								"label": "uint16",
+								"numberOfBytes": "2"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							},
+							"t_uint64": {
+								"encoding": "inplace",
+								"label": "uint64",
+								"numberOfBytes": "8"
+							},
+							"t_uint8": {
+								"encoding": "inplace",
+								"label": "uint8",
+								"numberOfBytes": "1"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol: Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol": {
+				"ast": {
+					"absolutePath": "BLOQUE 1 - Conceptos básicos de Solidity/Tema 3 - Tipos de variables y operadores/variables_enteras.sol",
+					"exportedSymbols": {
+						"enteros": [
+							35
+						]
+					},
+					"id": 36,
+					"license": null,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.4",
+								".4",
+								"<",
+								"0.7",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "25:31:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 35,
+							"linearizedBaseContracts": [
+								35
+							],
+							"name": "enteros",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "mi_primer_entero",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "118:21:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "118:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 6,
+									"mutability": "mutable",
+									"name": "mi_primer_entero_inicializado",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "146:38:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "146:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "33",
+										"id": 5,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "183:1:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_3_by_1",
+											"typeString": "int_const 3"
+										},
+										"value": "3"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"mutability": "mutable",
+									"name": "cota",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "191:16:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 7,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "191:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "35303030",
+										"id": 8,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "203:4:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_5000_by_1",
+											"typeString": "int_const 5000"
+										},
+										"value": "5000"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 11,
+									"mutability": "mutable",
+									"name": "entero_8_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "284:19:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint8",
+										"typeString": "uint8"
+									},
+									"typeName": {
+										"id": 10,
+										"name": "uint8",
+										"nodeType": "ElementaryTypeName",
+										"src": "284:5:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint8",
+											"typeString": "uint8"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 14,
+									"mutability": "mutable",
+									"name": "entero_64_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "310:28:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint64",
+										"typeString": "uint64"
+									},
+									"typeName": {
+										"id": 12,
+										"name": "uint64",
+										"nodeType": "ElementaryTypeName",
+										"src": "310:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint64",
+											"typeString": "uint64"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "37303030",
+										"id": 13,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "334:4:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_7000_by_1",
+											"typeString": "int_const 7000"
+										},
+										"value": "7000"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 16,
+									"mutability": "mutable",
+									"name": "entero_16_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "345:21:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint16",
+										"typeString": "uint16"
+									},
+									"typeName": {
+										"id": 15,
+										"name": "uint16",
+										"nodeType": "ElementaryTypeName",
+										"src": "345:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint16",
+											"typeString": "uint16"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 18,
+									"mutability": "mutable",
+									"name": "entero_25_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "373:22:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 17,
+										"name": "uint256",
+										"nodeType": "ElementaryTypeName",
+										"src": "373:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 20,
+									"mutability": "mutable",
+									"name": "mi_primer_entero_con_signo",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "439:30:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int256",
+										"typeString": "int256"
+									},
+									"typeName": {
+										"id": 19,
+										"name": "int",
+										"nodeType": "ElementaryTypeName",
+										"src": "439:3:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int256",
+											"typeString": "int256"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 24,
+									"mutability": "mutable",
+									"name": "mi_numero",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "476:19:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int256",
+										"typeString": "int256"
+									},
+									"typeName": {
+										"id": 21,
+										"name": "int",
+										"nodeType": "ElementaryTypeName",
+										"src": "476:3:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int256",
+											"typeString": "int256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"id": 23,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"lValueRequested": false,
+										"nodeType": "UnaryOperation",
+										"operator": "-",
+										"prefix": true,
+										"src": "492:3:0",
+										"subExpression": {
+											"argumentTypes": null,
+											"hexValue": "3332",
+											"id": 22,
+											"isConstant": false,
+											"isLValue": false,
+											"isPure": true,
+											"kind": "number",
+											"lValueRequested": false,
+											"nodeType": "Literal",
+											"src": "493:2:0",
+											"subdenomination": null,
+											"typeDescriptions": {
+												"typeIdentifier": "t_rational_32_by_1",
+												"typeString": "int_const 32"
+											},
+											"value": "32"
+										},
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_minus_32_by_1",
+											"typeString": "int_const -32"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 27,
+									"mutability": "mutable",
+									"name": "mi_numero_2",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "502:20:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int256",
+										"typeString": "int256"
+									},
+									"typeName": {
+										"id": 25,
+										"name": "int",
+										"nodeType": "ElementaryTypeName",
+										"src": "502:3:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int256",
+											"typeString": "int256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "3635",
+										"id": 26,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "520:2:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_65_by_1",
+											"typeString": "int_const 65"
+										},
+										"value": "65"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 29,
+									"mutability": "mutable",
+									"name": "entero_con_signo_72_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "599:30:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int72",
+										"typeString": "int72"
+									},
+									"typeName": {
+										"id": 28,
+										"name": "int72",
+										"nodeType": "ElementaryTypeName",
+										"src": "599:5:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int72",
+											"typeString": "int72"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 32,
+									"mutability": "mutable",
+									"name": "entero_con240_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "636:33:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int240",
+										"typeString": "int240"
+									},
+									"typeName": {
+										"id": 30,
+										"name": "int240",
+										"nodeType": "ElementaryTypeName",
+										"src": "636:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int240",
+											"typeString": "int240"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "3930303030",
+										"id": 31,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "664:5:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_90000_by_1",
+											"typeString": "int_const 90000"
+										},
+										"value": "90000"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 34,
+									"mutability": "mutable",
+									"name": "entero_con_256_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 35,
+									"src": "676:26:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int256",
+										"typeString": "int256"
+									},
+									"typeName": {
+										"id": 33,
+										"name": "int256",
+										"nodeType": "ElementaryTypeName",
+										"src": "676:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int256",
+											"typeString": "int256"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								}
+							],
+							"scope": 36,
+							"src": "60:648:0"
+						}
+					],
+					"src": "25:692:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
